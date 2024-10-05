@@ -138,6 +138,7 @@ describe("Test suite", () => {
         key: api_key,
         token: api_token,
       },
+      
     }).then((response) => {
       expect(response.status).to.eq(400); // Bad Request
       cy.log("Error Message:", response.body);
